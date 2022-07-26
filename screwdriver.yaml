@@ -3,7 +3,7 @@ shared:
 
 jobs:
   build1:
-    requires: [ ~commit, ~pr ]
+    requires: [ ~commit ]
     steps:
        - echo "fooo!"
   build2:
