@@ -1,0 +1,12 @@
+shared:
+  image: node16
+
+jobs:
+  build1:
+    requires: [ ~commit, ~pr ]
+    steps:
+       - echo "fooo!"
+  build2:
+    requires: [ ~pr:develop ]
+    steps:
+       - git log
